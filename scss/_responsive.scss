@@ -1,0 +1,121 @@
+/*Responsive*/
+/*Header*/
+@media screen and (max-width: 680px) {
+    .header__container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .header-logo{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+/*Berry*/
+@media screen and (max-width: 680px) {
+    .berry__main {
+        margin: auto;
+        text-align: center;
+    }
+    .berry__main-title, .berry__main-text, .berry__main-second-title, .berry__main-description {
+        color: $white;
+    }
+    .berry {
+        background-position: 0 0;
+    }
+}
+
+/*Nav*/
+@media screen and (max-width: 820px) {
+    .nav__item {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+/*Main Content*/
+@media screen and (max-width: 1020px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .left-bar {
+        width: 100%;
+    }
+    .headline {
+        padding-bottom: 30px;
+    }
+    .lists__wrapp {
+        justify-content: initial;
+    }
+    .list__card:not(:last-child) {
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .headline, .right-bar__we-do, .right-bar__lists, .table {
+        text-align: center;
+    }
+    .we-do__view, .lists__wrapp {
+        flex-direction: column;
+        align-items: center;
+    }
+    .we-do__card, .list__card:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .table {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+    .list__card-content {
+        list-style: none;
+    }
+    .list__card-item_second {
+        margin-left: 0px;
+    }
+    .table__cell::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10%;
+        font-weight: bold;
+        color: $white;
+    }
+    .table__cell {
+        display: block;
+        text-align: right;
+    }
+    .table__head {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .table__cell::before {
+        display: none;
+    }
+    .table__cell {
+        text-align: left;
+    }
+}
+
+/*Footer*/
+@media screen and (max-width: 790px) {
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__item {
+        text-align: center;
+    }
+    .footer__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .footer__item:last-child {
+        margin-top: 15px;
+    }
+}
